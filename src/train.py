@@ -1,4 +1,7 @@
 import pyrootutils
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 root = pyrootutils.setup_root(
     search_from=__file__,
